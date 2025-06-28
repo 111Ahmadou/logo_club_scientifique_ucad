@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographie du Logo - Club Scientifique UCAD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0D1B2A;
+            color: #E0E1DD;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #41EAD4, #E0E1DD);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .logo-symbol {
+            font-size: 5rem;
+            line-height: 1;
+            text-shadow: 0 0 15px rgba(65, 234, 212, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center my-12">
+            <h1 class="text-4xl md:text-6xl font-black uppercase tracking-wider">
+                <span class="gradient-text">L'Étoile du Savoir</span>
+            </h1>
+            <p class="mt-4 text-lg md:text-xl text-gray-400">Déconstruction de l'identité visuelle du Club Scientifique de l'UCAD</p>
+        </header>
+
+        <main>
+            <section id="vision" class="mb-16">
+                <div class="card rounded-2xl p-8 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+                    <div class="flex justify-center items-center">
+                        <div class="relative w-64 h-64 flex items-center justify-center">
+                            <div class="absolute w-full h-full bg-[#41EAD4] rounded-full opacity-10 animate-pulse"></div>
+                            <div class="absolute w-4/5 h-4/5 bg-[#41EAD4] rounded-full opacity-20 animate-pulse delay-500"></div>
+                            <span class="logo-symbol z-10">🧠</span>
+                            <span class="logo-symbol absolute z-20 text-5xl top-8 right-8 transform rotate-12 text-[#41EAD4]">✨</span>
+                            <span class="logo-symbol absolute z-0 text-3xl bottom-10 left-8 text-gray-500">⚙️</span>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Une Identité Forgée par la Science</h2>
+                        <p class="text-gray-300">
+                            Notre logo, "L'Étoile du Savoir", est bien plus qu'une image. Il est le manifeste de notre mission : fusionner la connaissance intellectuelle, l'innovation technologique et l'aspiration à la découverte. Chaque élément a été choisi pour représenter les valeurs fondamentales qui animent notre communauté de passionnés.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="symbols" class="mb-16">
+                <h2 class="text-3xl font-bold text-center mb-8">Au Cœur des Symboles</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <div class="card rounded-2xl p-6 text-center">
+                        <div class="logo-symbol mb-4">🌍</div>
+                        <h3 class="text-xl font-bold mb-2 text-[#41EAD4]">Le Cercle</h3>
+                        <p class="text-gray-400 text-sm">Symbole d'unité, de perfection et d'universalité. Il représente la cohésion de nos membres et l'étendue infinie des domaines scientifiques que nous explorons.</p>
+                    </div>
+
+                    <div class="card rounded-2xl p-6 text-center">
+                        <div class="logo-symbol mb-4">🧠</div>
+                        <h3 class="text-xl font-bold mb-2 text-[#41EAD4]">Le Cerveau</h3>
+                        <p class="text-gray-400 text-sm">Incarnation de l'intellect, de la pensée critique et de la créativité. Il est le moteur de notre quête de connaissance et de notre capacité à innover.</p>
+                    </div>
+
+                    <div class="card rounded-2xl p-6 text-center">
+                        <div class="logo-symbol mb-4">⚡️</div>
+                        <h3 class="text-xl font-bold mb-2 text-[#41EAD4]">Les Circuits</h3>
+                        <p class="text-gray-400 text-sm">Représentation de la technologie, de l'ingénierie et de la connectivité. Ils symbolisent la mise en pratique du savoir et notre orientation vers l'avenir.</p>
+                    </div>
+
+                    <div class="card rounded-2xl p-6 text-center">
+                        <div class="logo-symbol mb-4">✨</div>
+                        <h3 class="text-xl font-bold mb-2 text-[#41EAD4]">L'Étoile</h3>
+                        <p class="text-gray-400 text-sm">Allégorie de la découverte, de l'illumination et de l'excellence. Elle guide notre aspiration à repousser les frontières du savoir.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="palette" class="mb-16">
+                 <div class="card rounded-2xl p-8 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-4">Le Langage des Couleurs</h2>
+                        <p class="text-gray-300 mb-2"><strong style="color: #0D1B2A; background-color: #E0E1DD; padding: 2px 6px; border-radius: 4px;">Bleu Nuit :</strong> La profondeur de la sagesse, la stabilité et le sérieux de la démarche scientifique.</p>
+                        <p class="text-gray-300 mb-2"><strong style="color: #41EAD4;">Vert Lumineux :</strong> L'énergie de l'innovation, la croissance et l'impact positif de la technologie.</p>
+                        <p class="text-gray-300"><strong style="color: #E0E1DD;">Blanc Argenté :</strong> La clarté, la pureté de la pensée et la précision, essentielles à la science.</p>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="colorPaletteChart"></canvas>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="typography" class="text-center">
+                <h2 class="text-3xl font-bold mb-4">La Voix du Club</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-6">Nous adoptons une typographie moderne, sans-serif, pour une communication claire, accessible et rigoureuse. Elle reflète notre approche directe et notre volonté de rendre la science compréhensible pour tous.</p>
+                <div class="card rounded-2xl p-8">
+                     <p class="text-4xl font-black">Club Scientifique UCAD</p>
+                     <p class="text-lg mt-2">Une police pour l'impact, la lisibilité et la modernité.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-16 py-8 border-t border-gray-800">
+            <p class="text-gray-500">Une identité visuelle pour inspirer la prochaine génération de scientifiques.</p>
+        </footer>
+    </div>
+
+    <script>
+        const wrapLabel = (label, maxWidth) => {
+            if (typeof label !== 'string' || label.length <= maxWidth) {
+                return label;
+            }
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + word).length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = '';
+                }
+                currentLine += word + ' ';
+            });
+            lines.push(currentLine.trim());
+            return lines;
+        };
+
+        const createColorPaletteChart = () => {
+            const ctx = document.getElementById('colorPaletteChart').getContext('2d');
+            const rawLabels = ['Sagesse (Bleu Nuit)', 'Innovation (Vert Lumineux)', 'Clarté (Blanc Argenté)'];
+            
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: rawLabels.map(label => wrapLabel(label, 16)),
+                    datasets: [{
+                        label: 'Palette de Couleurs',
+                        data: [50, 35, 15],
+                        backgroundColor: [
+                            '#0D1B2A',
+                            '#41EAD4',
+                            '#E0E1DD'
+                        ],
+                        borderColor: '#1f2937',
+                        borderWidth: 4,
+                        hoverOffset: 10
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            callbacks: {
+                                title: function(tooltipItems) {
+                                    const item = tooltipItems[0];
+                                    let label = item.chart.data.labels[item.dataIndex];
+                                    return Array.isArray(label) ? label.join(' ') : label;
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            createColorPaletteChart();
+        });
+    </script>
+
+</body>
+</html>
